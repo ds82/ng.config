@@ -1,0 +1,25 @@
+{
+  "name": "ng.config",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ds82/ng.config.git"
+  },
+  "keywords": [
+    "angular",
+    "ng",
+    "app",
+    "config"
+  ],
+  "author": "Dennis Sänger <npm15-ngconfig@mail.ds82.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ds82/ng-app-config/issues"
+  },
+  "homepage": "https://github.com/ds82/ng-app-config#readme"
+}
