@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ng-app-config', [])
+angular.module('ng.config', [])
   .service('$config', Config);
 
 function Config() {
