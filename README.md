@@ -10,6 +10,10 @@ This module provides a super-simple $config service for your angular app.
 
 ## usage
 
+```bash
+npm i --save ng.config
+```
+
 ```js
 angular.module('app', ['ng.config'])
   .run(Setup);
