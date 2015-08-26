@@ -2,9 +2,10 @@
   "name": "ng.config",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -r ./index.js -s 'ng.config' | derequire > dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/ds82/ng-app-config/issues"
   },
-  "homepage": "https://github.com/ds82/ng-app-config#readme"
+  "homepage": "https://github.com/ds82/ng-app-config#readme",
+  "devDependencies": {
+    "browserify": "11.0.1",
+    "derequire": "2.0.2",
+    "lodash": "3.10.1"
+  }
 }
