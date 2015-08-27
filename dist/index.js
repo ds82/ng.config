@@ -463,13 +463,17 @@ var $$set = _dereq_('lodash/object/set');
 angular.module('ng.config', [])
   .provider('$config', ConfigProvider);
 
+var service = new ConfigService();
+
+// make service available outside fo angular
+module.exports = service;
+
 function ConfigProvider() {
   var vm = this;
-  var service = new ConfigService();
 
   vm.$get = $get;
-  vm.set = service.set;
-  vm.get = service.get;
+  vm.set = service.$.set;
+  vm.get = service.$.get;
 
   function $get() {
     return service;

@@ -8,6 +8,9 @@ angular.module('ng.config', [])
 
 var service = new ConfigService();
 
+// make service available outside fo angular
+module.exports = service;
+
 function ConfigProvider() {
   var vm = this;
 
